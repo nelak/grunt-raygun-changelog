@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		var options = this.options({});
 
 		var commands = {
-			notes: ['log', '--tags', pkg.version + '..' + options.version || 'HEAD', '--no-merges', '--format="' + options.format || '%s' + '"'],
+			notes: ['log', '--tags', pkg.version + '..HEAD', '--no-merges', '--format="' + options.format || '%s' + '"'],
 			ownerName: ['config', '--global', 'user.name'],
 			emailAddress: ['config', '--global', 'user.email']
 		};
