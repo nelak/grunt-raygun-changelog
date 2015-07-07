@@ -5,12 +5,12 @@ var _ = require('lodash');
 
 module.exports = function(grunt) {
 
-	grunt.registerTask('raygun-changelog', 'Gather information about the git repository.', function() {
+	grunt.registerTask('raygun-changelog', 'Gather information about the git repository.', function(version) {
 
 		var done = this.async();
 		var pkg = grunt.file.readJSON('package.json');
 		var release = {
-			version: pkg.version
+			version: version
 		};
 		var options = this.options({});
 
