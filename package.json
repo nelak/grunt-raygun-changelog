@@ -1,6 +1,6 @@
 {
 	"name": "grunt-raygun-changelog",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Create raygun deployment release data from git",
 	"main": "Gruntfile.js",
 	"scripts": {
