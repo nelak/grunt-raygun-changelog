@@ -13,11 +13,11 @@ module.exports = function(grunt) {
 			version: pkg.version
 		};
 		var options = this.options({});
+
 		var commands = {
-			notes: ['log', '--tags', pkg.version + '..HEAD', '--no-merges', '--format="' + options.format || '%s' + '"'],
+			notes: ['log', '--tags', pkg.version + '..' + options.version || 'HEAD', '--no-merges', '--format="' + options.format || '%s' + '"'],
 			ownerName: ['config', '--global', 'user.name'],
 			emailAddress: ['config', '--global', 'user.email']
-				// version: ['describe', '--abbrev=0', '--tags']
 		};
 
 		var apply = function(key, next) {

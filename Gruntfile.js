@@ -1,11 +1,3 @@
-/*
- * grunt-raygun-deployment
- * https://raygun.io
- *
- * Copyright (c) 2015 Raygun.io
- * Licensed under the MIT license.
- */
-
 'use strict';
 
 module.exports = function(grunt) {
